@@ -6,7 +6,7 @@ window.addEventListener('wheel', function(event){
   if (event.deltaY > 0){
     //Scroll foword
 
-    document.getElementById("imageid").src="../Assets/yuvalImg/img" + index +".jpg";
+    document.getElementById("imageid").src="https://APlaceToCallHome.b-cdn.net/img" + index +".jpg";
     if (index < 310){
       index ++;
     }
@@ -17,7 +17,7 @@ window.addEventListener('wheel', function(event){
     if (index > 1){
       index --;
     }
-    document.getElementById("imageid").src="../Assets/yuvalImg/img" + index +".jpg";  
+    document.getElementById("imageid").src="https://APlaceToCallHome.b-cdn.net/img" + index +".jpg";  
   }
 
    if( parseInt(index) >= 111 && parseInt(index) <= 130){
