@@ -1,4 +1,36 @@
-
+ /* Nav bar
+  -----------------------------------------------*/
+  $(".step").click( function() {
+    $(this).addClass("active").prevAll().addClass("active");
+    $(this).nextAll().removeClass("active");
+  });
+  
+  $(".step01").click( function() {
+    $("#line-progress").css("width", "0%");
+    $(".discovery").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step02").click( function() {
+    $("#line-progress").css("width", "25%");
+    $(".strategy").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step03").click( function() {
+    $("#line-progress").css("width", "50%");
+    $(".creative").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step04").click( function() {
+    $("#line-progress").css("width", "75%");
+    $(".production").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step05").click( function() {
+    $("#line-progress").css("width", "100%");
+    $(".analysis").addClass("active").siblings().removeClass("active");
+  });
+  
+ 
  /* jQuery Pre loader
   -----------------------------------------------*/
 $(window).load(function(){
@@ -26,23 +58,6 @@ $(document).ready(function() {
             event.preventDefault();
         });
     });
-
-
-  /* Team carousel
-  -----------------------------------------------*/
-  $(document).ready(function() {
-      $("#team-carousel").owlCarousel({
-          items : 3,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3],
-          slideSpeed: 300,
-          itemsDesktop : [1199,2],
-          itemsTablet: [768,1],
-          itemsTabletSmall: [985,2],
-          itemsMobile : [479,1],
-      });
-    });
-    
 
     /* Back to Top
     -----------------------------------------------*/
