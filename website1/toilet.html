@@ -171,8 +171,12 @@
             "                        allowfullscreen></iframe>";
         $("#exampleModalCenter .modal-body ").html(newFrame);
     });
-</script>
+    $(".modal-footer button").click(function (e) {
+        e.preventDefault();
+        $("#exampleModalCenter .modal-body iframe").remove();
+    });
 
+</script>
 <script>
     $(".box-item").mouseover(function () {
         $(this).effect("shake", {times: 1}, 1000);

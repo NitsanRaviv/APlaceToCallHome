@@ -71,7 +71,7 @@ img {
 
 .__line-center {
     height: 230px;
-    width: 1px;
+    width: 2px;
     background: #dadada;
     display: block;
     position: absolute;
@@ -103,8 +103,8 @@ img {
 }
 
 img#home {
-    left: 33%;
-    width: 125px;
+    left: 27%;
+    width: 160px;
 }
 
 img#car {
@@ -156,5 +156,11 @@ img#car {
 @media (max-width: 480px) {
     .box-item {
         margin: 0 -26px;
+    }
+}
+
+@media (max-width: 769px) {
+    .col-md-4{
+        width: 100% !important;
     }
 }

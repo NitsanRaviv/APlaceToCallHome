@@ -171,6 +171,11 @@
             "                        allowfullscreen></iframe>";
         $("#exampleModalCenter .modal-body ").html(newFrame);
     });
+    $(".modal-footer button").click(function (e) {
+        e.preventDefault();
+        $("#exampleModalCenter .modal-body iframe").remove();
+    });
+
 </script>
 
 <script>
