@@ -1,3 +1,4 @@
+
 /* Body 
 ------------------------------------- */
 body {
@@ -349,7 +350,11 @@ a:hover, a:active, a:focus {
 }
 
 #home h1 {
-  color: #ffffff;
+  color: black;
+}
+
+#home p {
+  color: black;
 }
 
 #home .col-md-8 {
