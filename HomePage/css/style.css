@@ -391,6 +391,14 @@ a:hover, a:active, a:focus {
   padding: 12px;
 }
 
+#about .about-img .orel-img {
+  border: 8px solid #ffffff;
+  position: absolute;
+  left: -520px;
+  bottom: -325px;
+  padding: 12px;
+}
+
 #about .team-thumb {
   width: 100%;
   height: 400px;
@@ -535,14 +543,19 @@ footer {
   padding-bottom: 80px;
 }
 
-
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 /*---------------------------------------
     Social icons style              
 -----------------------------------------*/
 
 .social-icon {
-  padding: 0;
+  padding:0;
   margin: 0;
 }
 
